@@ -1,16 +1,26 @@
 @import 'colors';
 
-#root {
-  width: 100%;
-  font-family: 'Lato';
+body {  
+  margin: 0;
 
-  h1 {
-    color: $primaryColor;
-  }
-
-  .productsContainer {
-    display: flex;
-    flex-flow: wrap;
+  #root {
     width: 100%;
+    padding: 0;
+    font-family: 'Lato';
+
+    h1 {
+      color: $primaryColor;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .productsContainer {
+      display: flex;
+      flex-flow: wrap;
+      width: 100%;
+    }
   }
 }

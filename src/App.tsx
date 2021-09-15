@@ -6,7 +6,7 @@ import ProductCard from './components/ProductCard';
 import { products } from './products.json';
 
 const App: React.FC = () => (
-  <div className="productsContainer">
+  <div className="content productsContainer">
     {products.map((product) => (
       <ProductCard
         name={product.productName}
