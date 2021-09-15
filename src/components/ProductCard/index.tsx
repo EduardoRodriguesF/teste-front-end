@@ -4,19 +4,19 @@ import './styles.scss';
 import numberToReais from '../../utils/numberToReais';
 
 interface ProductProps {
-  productName: string;
-  descriptionShort: string;
+  name: string;
+  description: string;
   photo: string;
   price: number;
 }
 
 const ProductCard: React.FC<ProductProps> = ({
-  productName, descriptionShort, photo, price,
+  name, description, photo, price,
 }) => (
   <div>
-    <img src={photo} alt={productName} />
-    <h4>{productName}</h4>
-    <p>{descriptionShort}</p>
+    <img src={photo} alt={name} />
+    <h4>{name}</h4>
+    <p>{description}</p>
     <span>{numberToReais(price)}</span>
   </div>
 );

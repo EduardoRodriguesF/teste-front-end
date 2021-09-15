@@ -6,12 +6,16 @@ import ProductCard from './components/ProductCard';
 import { products } from './products.json';
 
 const App: React.FC = () => (
-  <ProductCard
-    productName={products[0].productName}
-    descriptionShort={products[0].descriptionShort}
-    photo={products[0].photo}
-    price={products[0].price}
-  />
+  <div className="productsContainer">
+    {products.map((product) => (
+      <ProductCard
+        name={product.productName}
+        description={product.descriptionShort}
+        photo={product.photo}
+        price={product.price}
+      />
+    ))}
+  </div>
 );
 
 export default App;
