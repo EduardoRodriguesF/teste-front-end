@@ -4,6 +4,7 @@ function numberToReais(val: number): string {
   return fixedVal.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL',
+    useGrouping: false,
   });
 }
 
