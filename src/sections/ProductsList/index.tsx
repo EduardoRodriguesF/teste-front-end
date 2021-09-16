@@ -18,9 +18,9 @@ interface IProductsListProps {
 const ProductsList: React.FC<IProductsListProps> = ({ products }) => {
   const [productShow, setProductShow] = useState(8);
 
-  const ToggleShow = () => {
+  const ToggleShow = useCallback(() => {
     setProductShow(productShow === products.length ? 8 : products.length);
-  };
+  }, [productShow, products.length]);
 
   return (
     <>
