@@ -12,10 +12,11 @@ interface IProduct {
 }
 
 interface IProductsListProps {
+  open: () => void;
   products: IProduct[];
 }
 
-const ProductsList: React.FC<IProductsListProps> = ({ products }) => {
+const ProductsList: React.FC<IProductsListProps> = ({ open, products }) => {
   const [productShow, setProductShow] = useState(8);
 
   const ToggleShow = useCallback(() => {
@@ -35,6 +36,7 @@ const ProductsList: React.FC<IProductsListProps> = ({ products }) => {
                 description={product.descriptionShort}
                 photo={product.photo}
                 price={product.price}
+                open={open}
               />
             );
           }

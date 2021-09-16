@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import './styles.scss';
 
@@ -10,12 +12,13 @@ interface IProductProps {
   description: string;
   photo: string;
   price: number;
+  open: () => void;
 }
 
 const ProductCard: React.FC<IProductProps> = ({
-  name, description, photo, price,
+  name, description, photo, price, open,
 }) => (
-  <div className="productCardContainer">
+  <div className="productCardContainer" onClick={open}>
     <div className="imageContainer">
       <img src={photo} alt={name} />
       <div className="quickView">
