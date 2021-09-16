@@ -24,7 +24,7 @@ const ProductsList: React.FC<IProductsListProps> = ({ products }) => {
 
   return (
     <>
-      <div className="productsListContainer">
+      <div className="products-list-container">
         {products.map((product, i) => {
           let result;
           if (i < productShow) {

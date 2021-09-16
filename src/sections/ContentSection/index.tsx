@@ -1,6 +1,12 @@
 import React from 'react';
 import './styles.scss';
 
-const ContentSection: React.FC = ({ children }) => <section>{children}</section>;
+interface IContentSectionProps {
+  id?: string;
+}
+
+const ContentSection: React.FC<IContentSectionProps> = ({ id, children }) => (
+  <section id={id}>{children}</section>
+);
 
 export default ContentSection;
