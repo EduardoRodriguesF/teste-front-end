@@ -14,8 +14,6 @@ const App: React.FC = () => (
       <p>it is a long established fact that a reader will be destracted by the readable</p>
     </header>
     <ProductsList products={products} />
-
-    <Button primaryColor>Ver mais</Button>
   </ContentSection>
 );
 
