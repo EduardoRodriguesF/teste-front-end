@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 
-import { AiOutlineZoomIn } from 'react-icons/ai';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 import numberToReais from '../../utils/numberToReais';
 
@@ -19,7 +19,7 @@ const ProductCard: React.FC<IProductProps> = ({
     <div className="imageContainer">
       <img src={photo} alt={name} />
       <div className="quickView">
-        <div className="circle"><AiOutlineZoomIn size={24} /></div>
+        <div className="circle"><AiOutlineSearch size={24} /></div>
         <span>Quick view</span>
       </div>
     </div>
