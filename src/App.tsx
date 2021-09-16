@@ -3,7 +3,6 @@ import './styles/App.scss';
 
 import ContentSection from './sections/ContentSection';
 import ProductsList from './sections/ProductsList';
-import Button from './components/Button';
 
 import { products } from './products.json';
 
