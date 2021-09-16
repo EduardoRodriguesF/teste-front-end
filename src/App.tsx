@@ -6,6 +6,7 @@ import ProductsList from './sections/ProductsList';
 
 import { products } from './products.json';
 import { text } from './aboutus.json';
+import Modal from './components/Modal';
 
 const App: React.FC = () => (
   <>
@@ -23,6 +24,8 @@ const App: React.FC = () => (
       </header>
       <p>{text}</p>
     </ContentSection>
+
+    <Modal product={products[3]} />
   </>
 );
 

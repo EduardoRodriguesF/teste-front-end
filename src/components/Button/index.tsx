@@ -6,7 +6,7 @@ type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 const Button: React.FC<IButtonProps> = ({ primaryColor, children, ...rest }) => (
-  <button type="button" {...rest} className={`${primaryColor ? 'primary' : 'white'}`}>{children}</button>
+  <button type="button" {...rest} className={`btn ${primaryColor ? 'primary' : 'white'}`}>{children}</button>
 );
 
 export default Button;
