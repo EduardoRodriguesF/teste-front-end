@@ -1,14 +1,75 @@
 @import '../../styles/colors';
 
-div {
+$transitionTime: 0.2s;
+
+.productCardContainer {
   width: 218px;
-  height: 350px;
-  padding: 32px 16px 0;
+  padding: 8px 16px 16px;
   color: $primaryColor;
   text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 12px;
+  letter-spacing: 0.05em;
+  transition: box-shadow $transitionTime;
 
-  img {
+  &:hover {
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
+
+    .imageContainer {
+      background-image: linear-gradient(transparent, $white);
+
+      img {
+        transform: translateY(-18px);
+      }
+
+      .quickView {
+        opacity: 1;
+      }
+    }
+  }
+
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
     height: 174px;
+    transition: background-image $transitionTime;
+    
+    img {
+      position: relative;
+      z-index: -1;
+      height: 100%;
+      transition: transform $transitionTime;
+    }
+
+    .quickView {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: opacity $transitionTime;
+
+      .circle {
+        $size: 38px;
+        box-sizing: border-box;
+        padding: 6px 0;
+
+        width: $size;
+        height: $size;
+        text-align: center;
+        color: $white;
+        background-color: $primaryColor;
+        box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      
+      span {
+        font-size: 12px;
+      }
+    }
   }
 
   h4, span { 
@@ -20,10 +81,10 @@ div {
     font-size: 15px; 
   }
   
-  p { 
-    padding: 0 32px;
+  p {
     margin: 0 0 12px;
     font-size: 10px;
+    line-height: 13px;
   }
 
   span { font-size: 18px; }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
 
+import { AiOutlineZoomIn } from 'react-icons/ai';
+
 import numberToReais from '../../utils/numberToReais';
 
 interface ProductProps {
@@ -13,8 +15,14 @@ interface ProductProps {
 const ProductCard: React.FC<ProductProps> = ({
   name, description, photo, price,
 }) => (
-  <div>
-    <img src={photo} alt={name} />
+  <div className="productCardContainer">
+    <div className="imageContainer">
+      <img src={photo} alt={name} />
+      <div className="quickView">
+        <div className="circle"><AiOutlineZoomIn size={24} /></div>
+        <span>Quick view</span>
+      </div>
+    </div>
     <h4>{name}</h4>
     <p>{description}</p>
     <span>{numberToReais(price)}</span>
