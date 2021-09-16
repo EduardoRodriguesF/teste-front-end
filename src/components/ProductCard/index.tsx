@@ -5,14 +5,14 @@ import { AiOutlineZoomIn } from 'react-icons/ai';
 
 import numberToReais from '../../utils/numberToReais';
 
-interface ProductProps {
+interface IProductProps {
   name: string;
   description: string;
   photo: string;
   price: number;
 }
 
-const ProductCard: React.FC<ProductProps> = ({
+const ProductCard: React.FC<IProductProps> = ({
   name, description, photo, price,
 }) => (
   <div className="productCardContainer">
