@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.scss';
 
 import ProductCard from '../../components/ProductCard';
 
@@ -14,7 +15,7 @@ interface IProductsListProps {
 }
 
 const ProductsList: React.FC<IProductsListProps> = ({ products }) => (
-  <div className="productsContainer">
+  <div className="productsListContainer">
     {products.map((product) => (
       <ProductCard
         name={product.productName}
