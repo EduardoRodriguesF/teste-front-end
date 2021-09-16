@@ -17,7 +17,7 @@ const App: React.FC = () => (
       <ProductsList products={products} />
     </ContentSection>
 
-    <ContentSection id="aboutUs">
+    <ContentSection id="about-us">
       <header>
         <h3><b>Sobre nós</b></h3>
       </header>
