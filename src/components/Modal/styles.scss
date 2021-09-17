@@ -53,10 +53,21 @@
         line-height: 15.05px;
         margin-top: 21px;
       }
+      
+      p.see-more {
+        display: flex;
+        margin-top: 20px;
 
-      a {
-        color: $primaryColor;
-        font-size: 12px;
+        a {
+          color: $primaryColor;
+          font-size: 12px;
+        }
+
+        svg {
+          position: relative;
+          left: 0;
+          margin: auto 0;
+        }
       }
 
       button {
