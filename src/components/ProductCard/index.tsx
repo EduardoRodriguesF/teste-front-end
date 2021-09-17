@@ -7,18 +7,33 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 import numberToReais from '../../utils/numberToReais';
 
-interface IProductProps {
+interface IProduct {
+  productName: string;
+  descriptionShort: string;
+  photo: string;
+  price: number;
+}
+
+interface IProductCardProps {
   name: string;
   description: string;
   photo: string;
   price: number;
-  open: () => void;
+  open: (product: IProduct) => undefined;
 }
 
-const ProductCard: React.FC<IProductProps> = ({
+const ProductCard: React.FC<IProductCardProps> = ({
   name, description, photo, price, open,
 }) => (
-  <div className="productCardContainer" onClick={open}>
+  <div
+    className="productCardContainer"
+    onClick={() => open({
+      productName: name,
+      descriptionShort: description,
+      photo,
+      price,
+    })}
+  >
     <div className="imageContainer">
       <img src={photo} alt={name} />
       <div className="quickView">

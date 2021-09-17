@@ -13,12 +13,12 @@ interface IProduct {
 interface IModalProps {
   isShowing: boolean;
   hide: () => void;
-  product: IProduct;
+  product: IProduct | null;
 }
 
 const Modal: React.FC<IModalProps> = ({ isShowing, hide, product }) => (
   <>
-    {isShowing && (
+    {isShowing && product != null && (
       <div className="modal-container">
         <div className="modal">
           <div className="modal-content image-container"><img src={product.photo} alt={product.productName} /></div>

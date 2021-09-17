@@ -12,7 +12,7 @@ interface IProduct {
 }
 
 interface IProductsListProps {
-  open: () => void;
+  open: (product: IProduct) => undefined;
   products: IProduct[];
 }
 
