@@ -17,6 +17,10 @@
     background-color: $white;
     border-radius: 5px;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     .modal-content.image-container {
       max-width: 330px;
       width: 330px;
