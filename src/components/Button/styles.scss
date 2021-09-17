@@ -11,9 +11,20 @@ button.btn {
   color: $white;
   border: 1px solid $white;
   border-radius: 5px;
+  transition: color, background-color, .2s;
 
   &.primary {
     color: $primaryColor;
     border-color: $primaryColor;
+  }
+
+  &:hover {
+    color: $primaryColor;
+    background-color: $white;
+
+    &.primary {
+      color: $white;
+      background-color: $primaryColor;
+    }
   }
 }
