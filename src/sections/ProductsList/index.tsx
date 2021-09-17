@@ -3,13 +3,7 @@ import './styles.scss';
 
 import ProductCard from '../../components/ProductCard';
 import Button from '../../components/Button';
-
-interface IProduct {
-  productName: string;
-  descriptionShort: string;
-  photo: string;
-  price: number;
-}
+import { IProduct } from '../../types';
 
 interface IProductsListProps {
   open: (product: IProduct) => undefined;

@@ -6,13 +6,7 @@ import './styles.scss';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 import numberToReais from '../../utils/numberToReais';
-
-interface IProduct {
-  productName: string;
-  descriptionShort: string;
-  photo: string;
-  price: number;
-}
+import { IProduct } from '../../types';
 
 interface IProductCardProps {
   name: string;

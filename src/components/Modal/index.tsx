@@ -2,13 +2,7 @@ import React from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import numberToReais from '../../utils/numberToReais';
 import './styles.scss';
-
-interface IProduct {
-  productName: string;
-  descriptionShort: string;
-  photo: string;
-  price: number;
-}
+import { IProduct } from '../../types';
 
 interface IModalProps {
   isShowing: boolean;
