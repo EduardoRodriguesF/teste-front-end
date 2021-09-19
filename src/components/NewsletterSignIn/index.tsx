@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 import './styles.scss';
 
 const NewsletterSignIn: React.FC = () => (
@@ -7,7 +8,7 @@ const NewsletterSignIn: React.FC = () => (
     <form>
       <input name="name" type="text" placeholder="Seu nome" />
       <input name="email" type="text" placeholder="Seu e-mail" />
-      <button type="submit">Enviar</button>
+      <Button type="submit" primaryColor>Enviar</Button>
     </form>
   </div>
 );

@@ -42,19 +42,11 @@
 
     button {
       padding: 10px 32px;
-      color: $primaryColor;
-      border: 1px solid $primaryColor;
       text-transform: uppercase;
-      border-radius: 5px;
       font-size: 12px;
       font-weight: 700;
       margin-top: 20px;
-      transition: color, background-color 0.2s;
-
-      &:hover {
-        color: $white;
-        background-color: $primaryColor;
-      }
+      letter-spacing: 0;
     }
   }
 }
