@@ -24,6 +24,18 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
+
+      <section id="slider">
+        <div style={{ backgroundImage: `url(${guitarNewsBackground})` }}>
+          <span>Novos produtos</span>
+          <h2>
+            <span><b>Instrumentos</b></span><br />
+            <span>Musicais</span>
+          </h2>
+          <Button>Confira</Button>
+        </div>
+      </section>
+
       <Categories />
 
       <section id="news">

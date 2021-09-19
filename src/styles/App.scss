@@ -21,7 +21,25 @@ button {
 	outline: inherit;
 }
 
-#news {
+#slider {
+  min-height: 504px;
+  margin-top: 24px;
+
+  button {
+    border: none;
+    border-bottom: 1px solid $white;
+    border-radius: 0;
+    padding: 0;
+    padding: 12px;
+
+    &:hover {
+      color: $white;
+      background: none;
+    }
+  }
+}
+
+#news, #slider {
   display: flex;
   flex-direction: row;
 
@@ -85,3 +103,4 @@ button {
     padding: 0 64px;
   }
 }
+
