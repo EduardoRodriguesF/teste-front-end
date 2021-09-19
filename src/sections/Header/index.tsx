@@ -3,7 +3,7 @@ import {
   AiOutlineLock, AiOutlinePercentage, AiOutlineSearch, AiOutlineWhatsApp, AiOutlineUser,
 } from 'react-icons/ai';
 import { FiTruck } from 'react-icons/fi';
-import ContentSection from '../ContentSection';
+import ContentSection from '../../components/ContentSection';
 import './styles.scss';
 import Logo from '../../assets/logo.jpg';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.scss';
 
-import ContentSection from './sections/ContentSection';
+import ContentSection from './components/ContentSection';
 import ProductsList from './sections/ProductsList';
 
 import { products } from './products.json';

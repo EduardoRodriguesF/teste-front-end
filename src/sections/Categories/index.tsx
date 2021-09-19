@@ -1,6 +1,6 @@
 import React from 'react';
 import CategoryCard from '../../components/CategoryCard';
-import ContentSection from '../ContentSection';
+import ContentSection from '../../components/ContentSection';
 import './styles.scss';
 
 import electricGuitarImg from '../../assets/categories/electric-guitar.png';
