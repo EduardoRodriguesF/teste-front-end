@@ -1,0 +1,10 @@
+#categories {
+  padding-top: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  > div {
+    min-width: 105px;
+  }
+}

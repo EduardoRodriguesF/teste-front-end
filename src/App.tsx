@@ -9,7 +9,7 @@ import { text } from './aboutus.json';
 import Modal from './components/Modal';
 import useModal from './useModal';
 import Header from './sections/Header';
-import CategoryCard from './components/CategoryCard';
+import Categories from './sections/Categories';
 
 const App: React.FC = () => {
   const {
@@ -20,9 +20,7 @@ const App: React.FC = () => {
     <>
       <Header />
 
-      <ContentSection>
-        <CategoryCard title="Guitarras" image={products[0].photo} />
-      </ContentSection>
+      <Categories />
 
       <ContentSection>
         <header>
