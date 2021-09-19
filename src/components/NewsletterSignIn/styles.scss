@@ -1,0 +1,60 @@
+@import '../../styles/colors';
+
+.newsletter-signin-container {
+  color: $primaryColor;
+  background-color: $white;
+  padding: 32px 28px;  
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  p {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 18px;
+    
+    span { 
+      font-size: 14.5px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid $primaryColor;    text-transform: uppercase;
+      text-transform: uppercase;
+      font-family: inherit;
+      padding: 10px 0 10px 24px ;
+
+      & + input {
+        margin-top: 8px;
+      }
+    }
+
+    ::placeholder {
+      color: $primaryColor;
+    }
+
+    button {
+      padding: 10px 32px;
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 20px;
+      transition: color, background-color 0.2s;
+
+      &:hover {
+        color: $white;
+        background-color: $primaryColor;
+      }
+    }
+  }
+}

@@ -9,6 +9,7 @@ import dinersClubImg from '../../assets/payment/diners-club.jpg';
 import boletoImg from '../../assets/payment/boleto.png';
 import rapidSslImg from '../../assets/certificates/rapidssl.jpeg';
 import vtexPciImg from '../../assets/certificates/vtex-pci.png';
+import NewsletterSignIn from '../../components/NewsletterSignIn';
 
 const Footer: React.FC = () => (
   <footer>
@@ -45,6 +46,7 @@ const Footer: React.FC = () => (
             <img src={vtexPciImg} alt="VTEX PCI" />
           </div>
         </div>
+        <NewsletterSignIn />
       </ContentSection>
     </div>
     <div />
