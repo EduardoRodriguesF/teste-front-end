@@ -10,6 +10,7 @@ import Modal from './components/Modal';
 import useModal from './useModal';
 import Header from './sections/Header';
 import Categories from './sections/Categories';
+import Footer from './sections/Footer';
 
 const App: React.FC = () => {
   const {
@@ -19,7 +20,6 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
-
       <Categories />
 
       <ContentSection>
@@ -36,6 +36,8 @@ const App: React.FC = () => {
         </header>
         <p>{text}</p>
       </ContentSection>
+
+      <Footer />
 
       <Modal isShowing={isShowing} hide={hide} product={selectedProduct} />
     </>
