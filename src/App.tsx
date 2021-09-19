@@ -12,6 +12,10 @@ import Header from './sections/Header';
 import Categories from './sections/Categories';
 import Footer from './sections/Footer';
 
+import soundboardNewsBackground from './assets/soundboard-news.jpeg';
+import guitarNewsBackground from './assets/guitar-news.jpeg';
+import Button from './components/Button';
+
 const App: React.FC = () => {
   const {
     isShowing, selectedProduct, open, hide,
@@ -21,6 +25,27 @@ const App: React.FC = () => {
     <>
       <Header />
       <Categories />
+
+      <section id="news">
+        <div style={{ backgroundImage: `url(${soundboardNewsBackground})` }}>
+          <span>Novidades</span>
+          <hr />
+          <h2>
+            <span>Áudio</span><br />
+            <span><b>profissional</b></span>
+          </h2>
+          <Button>Confira</Button>
+        </div>
+        <div style={{ backgroundImage: `url(${guitarNewsBackground})` }}>
+          <span>Novidades</span>
+          <hr />
+          <h2>
+            <span><b>Instrumentos</b></span><br />
+            <span>Musicais</span>
+          </h2>
+          <Button>Confira</Button>
+        </div>
+      </section>
 
       <ContentSection>
         <header>

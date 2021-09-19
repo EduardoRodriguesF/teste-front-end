@@ -6,7 +6,7 @@ interface IContentSectionProps {
 }
 
 const ContentSection: React.FC<IContentSectionProps> = ({ id, children }) => (
-  <section id={id}>{children}</section>
+  <section id={id} className="section-container">{children}</section>
 );
 
 export default ContentSection;
