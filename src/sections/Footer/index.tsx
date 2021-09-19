@@ -9,6 +9,9 @@ import dinersClubImg from '../../assets/payment/diners-club.jpg';
 import boletoImg from '../../assets/payment/boleto.png';
 import rapidSslImg from '../../assets/certificates/rapidssl.jpeg';
 import vtexPciImg from '../../assets/certificates/vtex-pci.png';
+import econverseLogo from '../../assets/econverse-logo.png';
+import vtexLogo from '../../assets/vtex-logo.png';
+
 import NewsletterSignIn from '../../components/NewsletterSignIn';
 
 const Footer: React.FC = () => (
@@ -49,7 +52,20 @@ const Footer: React.FC = () => (
         <NewsletterSignIn />
       </ContentSection>
     </div>
-    <div />
+    <ContentSection>
+      <div>
+        <p>
+          NINJA SOM COMÉRCIO DE ELETRÔNICOS LTDA - 2012 - 2019,
+          todos os direitos reservados. Rua Santa Ifigênia, <br />
+          556 560/562/564 - Santa Efigênia - CEP: 01.207-000
+          - São Paulo / SP - CNPJ 07.282.516/0001-15
+        </p>
+      </div>
+      <div>
+        <img src={econverseLogo} alt="Econverse" />
+        <img src={vtexLogo} alt="VTEX" />
+      </div>
+    </ContentSection>
   </footer>
 );
 

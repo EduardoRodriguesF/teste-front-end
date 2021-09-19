@@ -54,4 +54,25 @@ footer {
       }
     }
   }
+
+  > section:last-child {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    div:first-child {
+      p {
+        color: #010101;
+        font-size: 10px;
+        line-height: 12px; 
+      }
+    }
+
+    div:last-child {
+      img {
+        max-height: 48px; 
+      }
+    }
+  }
 }
